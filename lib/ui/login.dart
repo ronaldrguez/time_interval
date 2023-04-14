@@ -47,6 +47,9 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 Text('Login', style: TextStyle(fontSize: 40.0, fontWeight: FontWeight.w700, color: Colors.green.shade900),),
                 TextFormField(
+                  decoration: const InputDecoration(
+                    labelText: 'User'
+                  ),
                   controller: controller,
                   style: TextStyle(color: Colors.green.shade900),
                   validator: (value) {
